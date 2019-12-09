@@ -28,7 +28,7 @@ public class CommentController {
 			response.setVaid(false);
 			response.setResponseMessage("Please Provide some message");
 		} else {
-			commentService.moderateComment(request);
+			response =commentService.moderateComment(request);
 		}
 		return response;
 	}
